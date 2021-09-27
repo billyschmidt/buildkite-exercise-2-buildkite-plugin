@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
-SPELLING_ERR=$( docker run --rm -v $(pwd):/workdir tmaier/markdown-spellcheck:latest --report "**/*.md" )
+SPELLING_ERR=$( docker run --rm -v $(pwd):/workdir tmaier/markdown-spellcheck:latest -l "*.md" )
 FORMATTED_ERR=$( echo $SPELLING_ERR | sed 's/\[1m/<h4>/g;s/\[22m/<\/h4>/g;s/\[31m/<div class="inline red">/g;s/\[39m/<\/div>/g' )
 
 echo $FORMATTED_ERR
