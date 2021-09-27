@@ -4,10 +4,10 @@
 
 ```yml
 steps:
-- command: ls
+  - command: ls
     plugins:
       - billyschmidt/buildkite-exercise-2:
-        pattern: '*.md'
+          pattern: '*.md'
 ```
 
 ## Configuration
