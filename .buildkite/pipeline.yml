@@ -9,5 +9,5 @@ steps:
           id: billyschmidt/buildkite-execise-2:
   - label: "spell check"
     plugins:
-      - billyschmidt/buildkite-execise-2:
+      - billyschmidt/buildkite-execise-2#v1.0.0:
           pattern: '*.md'

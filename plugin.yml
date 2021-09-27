@@ -8,5 +8,3 @@ configuration:
       type: string
     pattern: 
       type: string
-  required:
-    - pattern

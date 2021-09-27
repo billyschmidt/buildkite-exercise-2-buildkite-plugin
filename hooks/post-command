@@ -1,0 +1,10 @@
+#!/bin/bash
+set -euo pipefail
+
+echo "--- :1234: Counting the number of files"
+
+COUNT=$(find . -name "$PATTERN" | wc -l)
+
+echo "Found ${COUNT} files matching ${PATTERN}"
+
+buildkite-agent annotate "Found ${COUNT} files matching ${PATTERN}"
