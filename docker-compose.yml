@@ -1,0 +1,6 @@
+services:
+  lint:
+    image: buildkite/plugin-linter
+    command: ['--id', 'billyschmidt/buildkite-exercise-2']
+    volumes:
+      - ".:/plugin:ro"
