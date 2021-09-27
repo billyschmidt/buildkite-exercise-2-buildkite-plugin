@@ -5,4 +5,4 @@ SPELLING_ERR=$( docker run --rm -ti -v $PWD:/workdir tmaier/markdown-spellcheck:
 FORMATTED_ERR=$( echo $SPELLING_ERR | sed 's/\[1m/<h4>/g;s/\[22m/<\/h4>/g;s/\[31m/<div class="inline red">/g;s/\[39m/<\/div>/g' )
 
 echo $FORMATTED_ERR
-buildkite-agent annotate "We found the following issues: <\/div>$FORMATTED_ERR</code></pre>" --style "info"
+buildkite-agent annotate "We found the following issues: $FORMATTED_ERR" --style "info"
