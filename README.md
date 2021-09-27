@@ -5,7 +5,7 @@
 ```yml
 steps:
   - plugins:
-      - billyschmidt/buildkite-exercise-2#v1.0.0:
+      - billyschmidt/buildkite-exercise-2-buildkite-plugin:
           pattern: '*.md'
 ```
 
