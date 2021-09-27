@@ -1,0 +1,10 @@
+name: Spell checker
+description: checks spelling of all markdown files
+author: billy schmidt
+requirements: []
+configuration:
+  properties:
+    pattern: 
+      type: string
+  required:
+    - pattern
