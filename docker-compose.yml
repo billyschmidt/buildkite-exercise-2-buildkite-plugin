@@ -1,12 +1,13 @@
 version: '2'
-platform: linux/arm64/v8
 services:
   lint:
     image: buildkite/plugin-linter
+    platform: linux/arm64/v8
     command: ['--id', 'billyschmidt/buildkite-exercise-2']
     volumes:
       - ".:/plugin:ro"
   tests:
     image: buildkite/plugin-tester
+    platform: linux/arm64/v8
     volumes:
       - ".:/plugin:ro"
