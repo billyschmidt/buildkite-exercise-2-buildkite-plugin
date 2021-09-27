@@ -1,4 +1,5 @@
 version: '2'
+platform: linux/arm64/v8
 services:
   lint:
     image: buildkite/plugin-linter
