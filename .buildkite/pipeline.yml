@@ -1,0 +1,13 @@
+steps:
+  - label: run bats test
+    plugins:
+      - docker-compose#v3.3.0:
+          run: tests
+  - label: ":sparkles: lint"
+    plugins:
+      - plugin-linter#v2.0.0:
+          id: billyschmidt/buildkite-execise-2:
+  - label: "spell check"
+    plugins:
+      - billyschmidt/buildkite-execise-2:
+          pattern: '*.md'
