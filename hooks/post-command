@@ -2,6 +2,6 @@
 
 set -euo pipefail
 
-ERRORS=$(docker run --rm -v $(pwd):/workdir tmaier/hunspell:latest -l *.md)
+ERRORS=$(docker run --rm -v $(pwd):/workdir tmaier/hunspell -u3 -H *.md)
 
 buildkite-agent annotate "We found the following issues: $ERRORS" --style "info"
