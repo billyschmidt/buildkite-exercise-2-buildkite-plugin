@@ -1,7 +1,6 @@
 name: Spell checker
 description: checks spelling of all markdown files
-author: billy schmidt
-requirements: []
+author: https://github.com/billyschmidt
 configuration:
   properties:
     pattern: 
