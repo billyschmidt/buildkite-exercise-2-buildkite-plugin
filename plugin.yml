@@ -4,6 +4,8 @@ author: https://github.com/billyschmidt
 requirements: []
 configuration:
   properties:
+    readme:
+      type: string
     pattern: 
       type: string
   required:
